@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>SPS Instruction</title>
+<style>
+ul.menubar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: LightSkyBlue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 35.25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: LightCyan;
+}
+
+h1.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+h2.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+h3.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+p.sansserif {font-family: Verdana, Helvetica, sans-serif; padding: 10px 50px;}
+p.color {color: rgba(0, 21, 51, 1);}
+li.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+ul.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+li.white {color: rgb(0, 0, 0);}
+a.white {color: rgb(0, 0, 0); font-family: Verdana, Helvetica, sans-serif;}
+</style>
+</head>
+
+<body style="background-color:#e6f5ff;">
+<h1 class = "sansserif">
+    <center>SPS Instruction - Python - Lesson 4</center>
+</h1>
+<ul class = "menubar">
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Home Page.html">Home</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Scratch.html">Scratch</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Python.html">Python</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - HTML 5.html">HTML 5</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Scratch Quiz.html">Scratch Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Python Quiz.html">Python Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - HTML 5 Quiz.html">HTML 5 Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - FAQs.html">FAQs</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Sitemap.html">Sitemap</a></li>
+</ul>
+<center><p class = "sansserif">Welcome! If you’re struggling or trying to learn how to code in Scratch, Python, or HTML, we’re here to help.</p></center>
+<center><h2 class = "sansserif" style = background-color:PowderBlue;>Python</h2></center>
+<p class = "sansserif">
+    <b>4.1 FOR LOOP</b>
+    </br>As a program executes, the interpreter always keeps track of which statement is about to be executed. We call this the control flow, of the flow of execution of the program. When humans execute programs, they often use their finger to point to each statement in turn. So we could think of control flow as “Python’s moving finger”.
+
+    <font size="4">
+        <xmp>
+            for f in ["Joe","Zoe","Brad","Angelina","Zuki","Thandi","Paris"]:
+                invite = "Hi " + f + ". Please come to my party on Saturday!"
+                print(invite)
+            # more code can follow here ...
+        </xmp>
+    </font>
+</p>
+<p class = "sansserif">
+<br>The variable f in the for statement at line 1 is called the loop variable. We could have chosen any other variable name instead.
+<br>Lines 2 and 3 are the loop body. The loop body is always indented. The convention is to use 4 spaces of indentation for our loop bodies. The indentation determines exactly what statements are “in the body of the loop”.
+<br>On each iteration or pass of the loop, first a check is done to see if there are still more items to be processed. If there are none left (this is called the terminating condition of the loop), the loop has finished. Program execution continues at the next statement after the loop body, (e.g. in this case the next statement below the comment in line 4).
+<br>If there are items still to be processed, the loop variable is updated to refer to the next item in the list. This means, in this case, that the loop body is executed here 7 times, and each time f will refer to a different friend.
+<br>At the end of each execution of the body of the loop, Python returns to the for statement, to see if there are more items to be handled, and to assign the next one to f.
+<br>Control flow until now has been strictly top to bottom, one statement at a time. The for loop changes this.
+</p>
+<p class = "sansserif"><b>4.2 WHILE LOOP</b></br>Notice that if the loop condition is False the first time we get loop, the statements in the body of the loop are never executed.
+<br>
+The body of the loop should change the value of one or more variables so that eventually the condition becomes false and the loop terminates. Otherwise the loop will repeat forever, which is called an infinite loop. An endless source of amusement for computer scientists is the observation that the directions on shampoo, “lather, rinse, repeat”, are an infinite loop.
+<br>
+In the case here, we can prove that the loop terminates because we know that the value of n is finite, and we can see that the value of v increments each time through the loop, so eventually it will have to exceed n. In other cases, it is not so easy, even impossible in some cases, to tell if the loop will ever terminate.
+<br>
+What you will notice here is that the while loop is more work for you — the programmer — than the equivalent for loop. When using a while loop one has to manage the loop variable yourself: give it an initial value, test for completion, and then make sure you change something in the body so that the loop terminates.</p>
+<p class = "sansserif"><b>4.3 BREAK STATEMENT</b></br>The break statement is used to immediately leave the body of its loop.</p>
+<p class = "sansserif"><b>4.4 CONTINUE STATEMENT</b></br>This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, for the current iteration.</p>
+</body>
+</html>

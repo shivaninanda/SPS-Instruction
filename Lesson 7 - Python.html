@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>SPS Instruction</title>
+<style>
+ul.menubar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: LightSkyBlue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 35.25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: LightCyan;
+}
+
+h1.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+h2.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+h3.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+p.sansserif {font-family: Verdana, Helvetica, sans-serif; padding: 10px 50px;}
+p.color {color: rgba(0, 21, 51, 1);}
+li.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+ul.sansserif {font-family: Verdana, Helvetica, sans-serif;}
+li.white {color: rgb(0, 0, 0);}
+a.white {color: rgb(0, 0, 0); font-family: Verdana, Helvetica, sans-serif;}
+</style>
+</head>
+
+<body style="background-color:#e6f5ff;">
+<h1 class = "sansserif">
+    <center>SPS Instruction - Python - Lesson 7</center>
+</h1>
+<ul class = "menubar">
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Home Page.html">Home</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Scratch.html">Scratch</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Python.html">Python</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - HTML 5.html">HTML 5</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Scratch Quiz.html">Scratch Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Python Quiz.html">Python Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - HTML 5 Quiz.html">HTML 5 Quiz</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - FAQs.html">FAQs</a></li>
+  <li class = "sansserif"><a class = "active" href = "Final Project- Sophia, Shivani, and Pratyusha - Sitemap.html">Sitemap</a></li>
+</ul>
+<center><p class = "sansserif">Welcome! If you’re struggling or trying to learn how to code in Scratch, Python, or HTML, we’re here to help.</p></center>
+<center><h2 class = "sansserif" style = background-color:PowderBlue;>Python</h2></center>
+<p class = "sansserif"><b>LESSON 7: LISTS AND TUPLES</b></br>A list or tuple are ordered collections of values. The values in the list or tuple can be called the elements or items.</p>
+<p class = "sansserif"><b>7.1 GROUPING DATA</b></br>We can use parentheses to group pairs of values. Tuples group any number of items into one single compound. While seperating the different values, we use commas. Also, even though it is not necessary, tuples are usually enclosed in parentheses.</p>
+<p class = "sansserif">Tuples are useful for representing what other languages often call records. It is related information that belongs together, similar to student records. There is no description of what each of these fields means, but we can guess. A tuple lets us “chunk” together related information and use it as a single thing.
+Tuples support the same sequence operations as strings. The index operator selects an element from a tuple.
+Tuples are Used for Grouping Data</br>We can group together pairs of values by surrounding with parentheses.FOr example:</br> year_born = (“Isaac Newton”, 1642)</br>This is an example of a data structure — a mechanism for grouping and organizing data to make it easier to use.The pair is an example of a tuple. Generalizing this, a tuple can be used to group any number of items into a single compound value. Syntactically, a tuple is a comma-separated sequence of values. Although it is not necessary, it is conventional to enclose tuples in parentheses:</br> julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")</br>Tuples are useful for representing what other languages often call records — some related information that belongs together, like your student record. There is no description of what each of these fields means, but we can guess. A tuple lets us “chunk” together related information and use it as a single thing.Tuples support the same sequence operations as strings. The index operator selects an element from a tuple.</br>julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+print(julia[2])</br>So like strings, tuples are immutable. Once Python has created a tuple in memory, it cannot be changed.Of course, even if we can’t modify the elements of a tuple, we can always make the julia variable reference a new tuple holding different information. To construct the new tuple, it is convenient that we can slice parts of the old tuple and join up the bits to make the new tuple. </br></p>
+</p>
+<p class = "sansserif"><b>7.2 STRONG ASSIGNMENT</b><br>
+The feature that allows a tuple of variables on the left of an assignment to be assigned values from a tuple on the right of the assignment. For example</br>julia = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+(name, surname, bYear, movie, mYear, profession, birthplace) = julia</br>If this runs then it will show:</br>Julia</br>
+Roberts</br>
+1967</br>
+Duplicity</br>
+2009</br>
+Actress</br>
+Atlanta, Georgia</br>This does the equivalent of seven assignment statements, all on one easy line. One requirement is that the number of variables on the left must match the number of elements in the tuple.One way to think of tuple assignment is as tuple packing/unpacking. In tuple packing, the values are ‘packed’ together in a tuple. In tuple unpacking, the values in a tuple are ‘unpacked’ into individual variables.The left side is a tuple of variables; the right side is a tuple of values. Each value is assigned to its respective variable. All the expressions on the right side are evaluated before any of the assignments. This feature makes tuple assignment quite versatile
+</p>
+
+</body>
+</html>
